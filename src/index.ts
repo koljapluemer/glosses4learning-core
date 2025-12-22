@@ -18,4 +18,4 @@ export {
 } from './storage/relationRules.js'
 
 // Schema (re-export for validation)
-export { default as glossSchema } from './schema/gloss.schema.json' assert { type: 'json' }
+export { default as glossSchema } from './schema/gloss.schema.json' with { type: 'json' }
