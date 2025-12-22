@@ -3,8 +3,8 @@
  * Port of src/shared/gloss_operations.py:10-104
  */
 
-import type { Gloss } from './types'
-import type { GlossStorage } from './GlossStorage'
+import type { Gloss } from './types.js'
+import type { GlossStorage } from './GlossStorage.js'
 
 /**
  * Attach translation to gloss with optional note

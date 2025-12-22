@@ -1,13 +1,13 @@
 import fs from 'fs'
 import path from 'path'
-import { deriveSlug } from './slug'
+import { deriveSlug } from './slug.js'
 import {
   RELATIONSHIP_FIELDS,
   WITHIN_LANGUAGE_RELATIONS,
   SYMMETRICAL_RELATIONS,
   type RelationshipField
-} from './relationRules'
-import type { Gloss } from './types'
+} from './relationRules.js'
+import type { Gloss } from './types.js'
 
 /**
  * File system-based gloss storage
