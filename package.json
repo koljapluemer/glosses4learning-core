@@ -1,0 +1,35 @@
+{
+  "name": "@glosses4learning/core",
+  "version": "1.0.0",
+  "description": "Core storage and data models for glosses4learning applications",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "lint": "eslint src --ext .ts"
+  },
+  "keywords": [
+    "gloss",
+    "language-learning",
+    "storage"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^25.0.1",
+    "typescript": "^5.9.3",
+    "eslint": "^9.39.2",
+    "typescript-eslint": "^8.49.0"
+  }
+}
