@@ -7,7 +7,7 @@ export {
 } from './storage/glossOperations.js'
 
 // Types
-export type { Gloss, GlossRef, UsageInfo } from './storage/types.js'
+export type { Gloss, GlossRef, UsageInfo, AudioPronunciation } from './storage/types.js'
 
 // Relationship Rules
 export {

@@ -7,7 +7,7 @@ import {
   SYMMETRICAL_RELATIONS,
   type RelationshipField
 } from './relationRules.js'
-import type { Gloss } from './types.js'
+import type { Gloss, AudioPronunciation } from './types.js'
 
 /**
  * File system-based gloss storage
@@ -88,7 +88,8 @@ export class GlossStorage {
       excludeFromLearning: false,
       decorativeImages: [],
       semanticImages: [],
-      unambigiousImages: []
+      unambigiousImages: [],
+      audioPronunciations: []
     }
 
     return this.createGloss(gloss)
@@ -153,7 +154,8 @@ export class GlossStorage {
       excludeFromLearning: (data.excludeFromLearning as boolean) ?? false,
       decorativeImages: (data.decorativeImages as string[]) ?? [],
       semanticImages: (data.semanticImages as string[]) ?? [],
-      unambigiousImages: (data.unambigiousImages as string[]) ?? []
+      unambigiousImages: (data.unambigiousImages as string[]) ?? [],
+      audioPronunciations: (data.audioPronunciations as AudioPronunciation[]) ?? []
     }
   }
 

@@ -4,6 +4,11 @@
 
 export type GlossRef = string
 
+export interface AudioPronunciation {
+  filename: string
+  comment?: string
+}
+
 export interface Gloss {
   content: string
   language: string
@@ -27,6 +32,7 @@ export interface Gloss {
   decorativeImages?: string[]
   semanticImages?: string[]
   unambigiousImages?: string[]
+  audioPronunciations?: AudioPronunciation[]
 }
 
 export interface UsageInfo {

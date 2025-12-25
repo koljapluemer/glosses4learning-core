@@ -117,6 +117,26 @@
       "items": { "type": "string" },
       "description": "Images that unambiguously represent the gloss.",
       "default": []
+    },
+    "audioPronunciations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "filename": {
+            "type": "string",
+            "description": "Audio file name for pronunciation."
+          },
+          "comment": {
+            "type": "string",
+            "description": "Optional comment about the pronunciation (e.g., 'formal', 'regional variant')."
+          }
+        },
+        "required": ["filename"],
+        "additionalProperties": false
+      },
+      "description": "Audio pronunciation files with optional comments.",
+      "default": []
     }
   },
   "required": ["content"],
