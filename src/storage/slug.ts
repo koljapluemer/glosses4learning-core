@@ -1,6 +1,4 @@
 /**
- * CRITICAL: Exact port of Python slug generation from src/shared/storage.py:61-77
- *
  * Build a filesystem-safe slug while preserving Unicode.
  * - Remove characters illegal on common filesystems: / \ ? * : | " < >
  * - Remove control chars (ord < 32)
