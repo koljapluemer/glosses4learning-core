@@ -137,6 +137,12 @@
       },
       "description": "Audio pronunciation files with optional comments.",
       "default": []
+    },
+    "credits": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Optional credits for the gloss (interpreted as basic inline markdown in frontend).",
+      "default": []
     }
   },
   "required": ["content"],

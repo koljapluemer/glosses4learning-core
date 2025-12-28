@@ -89,7 +89,8 @@ export class GlossStorage {
       decorativeImages: [],
       semanticImages: [],
       unambigiousImages: [],
-      audioPronunciations: []
+      audioPronunciations: [],
+      credits: []
     }
 
     return this.createGloss(gloss)
@@ -155,7 +156,8 @@ export class GlossStorage {
       decorativeImages: (data.decorativeImages as string[]) ?? [],
       semanticImages: (data.semanticImages as string[]) ?? [],
       unambigiousImages: (data.unambigiousImages as string[]) ?? [],
-      audioPronunciations: (data.audioPronunciations as AudioPronunciation[]) ?? []
+      audioPronunciations: (data.audioPronunciations as AudioPronunciation[]) ?? [],
+      credits: (data.credits as string[]) ?? []
     }
   }
 

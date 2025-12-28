@@ -33,6 +33,7 @@ export interface Gloss {
   semanticImages?: string[]
   unambigiousImages?: string[]
   audioPronunciations?: AudioPronunciation[]
+  credits?: string[]
 }
 
 export interface UsageInfo {
